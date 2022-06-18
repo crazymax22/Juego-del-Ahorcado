@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width">
+        <title>Juego del ahorcado</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Smooch&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>   
+
+    </head>
+    <body>
+        <header><img src="img/Logo.png"></header>
+
+        <main>
+            <section class="cajaInicio">
+                <button class="botonIniciarJuego botonAzul">Iniciar el juego</button>
+                <button class="botonAgregarPalabra botonBlanco">Agregar palabra</button>
+            </section>
+
+            <section class="cajaJuego">
+                
+                <canvas width="800" height="500"> </canvas>
+                
+                <div class="cajaLetras"></div>
+                
+                <div class="cajaLetrasFallidas"></div>
+
+                <div class="botonesJuego">
+                    <button class="botonNuevoJuego botonAzul">Nuevo Juego</button>
+                    <button class="botonDesistir botonBlanco">Desistir</button>
+                </div>
+            </section>
+
+            <section class="cajaAgregarPalabra">
+                
+                <div class="cajaError">
+                    <div class="cartelError">Error! Escribir palabras en mayuscúlas, sin acentos y caracteres especiales. Máx: 8 letras</div>
+                </div>
+                
+                <div class="cajaPanel">
+                    <input type="text" placeholder="Escriba una palabra" class="inputPalabra">
+                    <div class="advertenciaBotones">
+                        <div class="advertencia">
+                            <img src="img/exclamation.png" id="exclamacion">
+                            <p> Máx. 8 caracteres</p>
+                        </div>
+                    
+                        <div class="botonesPalabra">
+                            <button class="botonGuardar botonAzul">Guardar y empezar</button>
+                            <button class="botonCancelar botonBlanco">Cancelar</button>
+                        </div>
+                    </div>
+                </div>              
+            </section>
+        </main>
+
+        <footer>
+            <p>Maximiliano Ortea Sabitay</p>
+        </footer>
+        
+    </body>
+</html>
+
