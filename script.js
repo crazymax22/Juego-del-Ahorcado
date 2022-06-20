@@ -140,13 +140,13 @@ function mensajeGanarPerder(validacion) {
   switch (validacion) {
     case 1:
       pincel.fillStyle = "green"
-      pincel.font = "40px Haettenschweiler";
+      pincel.font = "40px Impact";
       pincel.fillText("Ganaste,",550,270);
-      pincel.fillText("Felicidades!",530,315);
+      pincel.fillText("Felicidades!",520,315);
       break
     case 2:
       pincel.fillStyle = "red"
-      pincel.font = "40px Haettenschweiler";
+      pincel.font = "40px Impact";
       pincel.fillText("Fin del juego!",550,270);
       break
   }
